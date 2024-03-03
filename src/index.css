@@ -278,11 +278,12 @@ body .options .option .label .info .sub {
 .inicio {
   position: relative;
 }
-
+#MODELOS > .cantainer {
+  margin: 35rem auto;
+}
 .options {
-  position: absolute;
-  width: 100%;
-  margin-top: 150px;
+  margin: auto;
+  margin-top: 50px;
   left: 10px;
 }
 
