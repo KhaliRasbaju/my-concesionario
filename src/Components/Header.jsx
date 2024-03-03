@@ -33,7 +33,13 @@ export const Header = () => {
             <span className="hamburger-inner"></span>
           </span>
         </button>
-        <nav className={`menu ${isVisibility ? "isVisibility" : ""}`}>
+        <nav
+          className={`menu ${isVisibility ? "isVisibility" : ""}`}
+          onClick={(e) => {
+            menuBtn();
+            menuVisibility();
+          }}
+        >
           <a href="#INICIO">INICIO</a>
           <a href="#MODELOS">MODELOS</a>
           <a href="#NOTICIAS">NOTICIAS</a>
