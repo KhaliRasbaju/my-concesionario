@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Card from "./Cards";
+import Footer from "./Footer";
 import video from "../assets/imagenes/Video.mp4";
 import imgchevrolet from "../assets/imagenes/chevrolet.png";
 import imgferrari from "../assets/imagenes/ferrari.png";
@@ -14,7 +16,7 @@ import img6 from "../assets/imagenes/image6.jpg";
 export function Main() {
   const d = document;
   const myStyle1 = {
-    "--optionBackground": `url(${img6})`,
+    "--optionBackground": `url(${img5})`,
   };
   const myStyle2 = {
     "--optionBackground": `url(${img4})`,
@@ -56,89 +58,89 @@ export function Main() {
       </section>
       <section id="MODELOS" className="section">
         <div className="container-modelos container-flex">
-          <div class="options flex-item">
+          <div className="options flex-item">
             <div
-              class={`option active`}
+              className={`option active`}
               style={myStyle1}
               onClick={(event) => {
                 handleClickCarOption(event);
                 handleClickOption(0);
               }}
             >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">🖤</div>
-                <div class="info">
-                  <div class="main">Porshe</div>
-                  <div class="sub">GT3 R5</div>
+              <div className="shadow"></div>
+              <div className="label">
+                <div className="icon">🖤</div>
+                <div className="info">
+                  <div className="main">Porshe</div>
+                  <div className="sub">GT3 R5</div>
                 </div>
               </div>
             </div>
             <div
-              class={`option`}
+              className={`option`}
               style={myStyle2}
               onClick={(event) => {
                 handleClickCarOption(event);
                 handleClickOption(1);
               }}
             >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">❤️</div>
-                <div class="info">
-                  <div class="main">Tesla</div>
-                  <div class="sub">Roadster 2020</div>
+              <div className="shadow"></div>
+              <div className="label">
+                <div className="icon">❤️</div>
+                <div className="info">
+                  <div className="main">Tesla</div>
+                  <div className="sub">Roadster 2020</div>
                 </div>
               </div>
             </div>
             <div
-              class={`option`}
+              className={`option`}
               style={myStyle3}
               onClick={(event) => {
                 handleClickCarOption(event);
                 handleClickOption(2);
               }}
             >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">💛</div>
-                <div class="info">
-                  <div class="main">Ferrari</div>
-                  <div class="sub">LaFerrari</div>
+              <div className="shadow"></div>
+              <div className="label">
+                <div className="icon">💛</div>
+                <div className="info">
+                  <div className="main">Ferrari</div>
+                  <div className="sub">LaFerrari</div>
                 </div>
               </div>
             </div>
             <div
-              class={`option`}
+              className={`option`}
               style={myStyle4}
               onClick={(event) => {
                 handleClickCarOption(event);
                 handleClickOption(3);
               }}
             >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">🧡</div>
-                <div class="info">
-                  <div class="main">Lamborghini</div>
-                  <div class="sub">Huracan</div>
+              <div className="shadow"></div>
+              <div className="label">
+                <div className="icon">🧡</div>
+                <div className="info">
+                  <div className="main">Lamborghini</div>
+                  <div className="sub">Huracan</div>
                 </div>
               </div>
             </div>
             <div
-              class={`option`}
+              className={`option`}
               style={myStyle6}
               onClick={(event) => {
                 handleClickCarOption(event);
                 handleClickOption(4);
               }}
             >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">❤️</div>
-                <div class="info">
-                  <div class="main">Chevrolete</div>
-                  <div class="sub">Camaro ZL1</div>
+              <div className="shadow"></div>
+              <div className="label">
+                <div className="icon">❤️</div>
+                <div className="info">
+                  <div className="main">Chevrolete</div>
+                  <div className="sub">Camaro ZL1</div>
                 </div>
               </div>
             </div>
@@ -241,6 +243,62 @@ export function Main() {
           </div>
         </div>
       </section>
+      <section id="NOTICIAS" className="section">
+        <h2>Noticias</h2>
+        <div className="cards-container">
+          <Card
+            title="Lamborghini Uracan"
+            date="14/05/2024"
+            img={img1}
+            alt="Lamborghini"
+            description="El mejor Lambo"
+          />
+          <Card
+            title="Lamborghini Uracan"
+            date="14/05/2024"
+            img={img1}
+            alt="Lamborghini"
+            description="El mejor Lambo"
+          />
+          <Card
+            title="Lamborghini Uracan"
+            date="14/05/2024"
+            img={img1}
+            alt="Lamborghini"
+            description="El mejor Lambo"
+          />
+          <Card
+            title="Lamborghini Uracan"
+            date="14/05/2024"
+            img={img1}
+            alt="Lamborghini"
+            description="El mejor Lambo"
+          />
+        </div>
+      </section>
+      <section id="CONTACTO" className="section">
+        <h2>Contacto</h2>
+        <div className="form-container">
+          <form className="form">
+            <div>
+              <label>Nombre Completo</label>
+              <input type="text" placeholder="Nombre Completo" />
+            </div>
+            <div>
+              <label>Correo Electrónico</label>
+              <input type="text" placeholder="Correo Electrónico" />
+            </div>
+            <textarea
+              name="comentarios"
+              cols="30"
+              rows="10"
+              placeholder="Deja un Comentario"
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
