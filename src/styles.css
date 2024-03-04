@@ -248,13 +248,19 @@ img {
 .card-item {
   border: 0.2rem solid #000000;
   margin-bottom: 2rem;
-  background-color: rgba(128, 128, 128, 0.279);
+  background-color: #cccccc75;
 }
 .cards-container p,
 .section > h2 {
-  text-align: center;
+  text-align: justify;
+  padding: 2rem;
   /* display: inline-block; */
-  margin-top: 13rem;
+}
+
+.card-item a {
+  color: blue;
+  text-decoration: none;
+  padding: 2rem;
 }
 
 .section {
