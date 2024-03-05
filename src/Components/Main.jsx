@@ -49,6 +49,34 @@ export function Main() {
   const handleClickOption = (index) => {
     setActiveOption(index);
   };
+
+  let i = 0;
+  const Carrousel = (event) => {
+    const $nextBtn = d.querySelector(".slider-btn .next"),
+      $prevBtn = d.querySelector(".slider-btn .prev"),
+      $slides = d.querySelectorAll(".option");
+    if (event.target === $prevBtn) {
+      event.preventDefault();
+      $slides[i].classList.remove("active");
+      i--;
+      if (i < 0) {
+        i = $slides.length - 1;
+      }
+      $slides[i].classList.add("active");
+    }
+
+    if (event.target === $nextBtn) {
+      event.preventDefault();
+      $slides[i].classList.remove("active");
+      i++;
+      if (i >= $slides.length) {
+        i = 0;
+      }
+      $slides[i].classList.add("active");
+    }
+
+    console.log(i);
+  };
   return (
     <div>
       <section id="INICIO">
@@ -149,6 +177,14 @@ export function Main() {
                   <div className="sub">Camaro ZL1</div>
                 </div>
               </div>
+            </div>
+            <div class="slider-btn" onClick={Carrousel}>
+              <a class="prev" href="#">
+                &laquo;
+              </a>
+              <a class="next" href="#">
+                &raquo;
+              </a>
             </div>
           </div>
           <div className="container-car flex-item flex-grow">
@@ -327,7 +363,7 @@ export function Main() {
           </form>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
