@@ -1,4 +1,8 @@
-import { faFacebookF, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
@@ -18,9 +22,15 @@ export default function Footer() {
         </li>
       </ul>
       <div className="social-media">
-        <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-        <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-        <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+        <a href="#">
+          <FontAwesomeIcon icon={faFacebookF} />
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+        <a href="#">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
       </div>
     </div>
   );

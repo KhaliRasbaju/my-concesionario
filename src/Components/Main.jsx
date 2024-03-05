@@ -50,11 +50,11 @@ export function Main() {
     setActiveOption(index);
   };
 
-  let i = 0;
   const Carrousel = (event) => {
     const $nextBtn = d.querySelector(".slider-btn .next"),
       $prevBtn = d.querySelector(".slider-btn .prev"),
       $slides = d.querySelectorAll(".option");
+    let i = activeOption;
     if (event.target === $prevBtn) {
       event.preventDefault();
       $slides[i].classList.remove("active");
@@ -74,8 +74,7 @@ export function Main() {
       }
       $slides[i].classList.add("active");
     }
-    console.log(i);
-    handleClickOption(i);
+    setActiveOption(i);
   };
   return (
     <div>
@@ -178,7 +177,12 @@ export function Main() {
                 </div>
               </div>
             </div>
-            <div class="slider-btn" onClick={Carrousel}>
+            <div
+              class="slider-btn"
+              onClick={(event) => {
+                Carrousel(event);
+              }}
+            >
               <a class="prev" href="#">
                 &laquo;
               </a>
