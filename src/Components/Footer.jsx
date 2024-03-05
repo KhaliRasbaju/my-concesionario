@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <h2>Concesionario</h2>
-      <p>Copyright © 2024 Mi concesionario. All rights reserved.</p>
+      <p>Copyright © 2024 Nuestro concesionario. All rights reserved.</p>
       <ul>
         <li>
           <a href="#">Inicio</a>
@@ -22,13 +22,13 @@ export default function Footer() {
         </li>
       </ul>
       <div className="social-media">
-        <a href="#">
+        <a href="https://www.facebook.com/?locale=es_LA">
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/?lang=es">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>

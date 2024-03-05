@@ -505,22 +505,5 @@ img {
     cursor: pointer;
   }
 
-  @media screen and (max-width: 768px) {
-    .footer ul {
-      flex-direction: column;
-    }
-
-    .footer li {
-      margin: 0.5rem 0;
-    }
-
-    .social-media {
-      margin-top: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .social-media a {
-      width: 50%;
-    }
-  }
+  
 }
