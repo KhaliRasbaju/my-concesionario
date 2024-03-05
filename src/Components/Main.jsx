@@ -74,8 +74,8 @@ export function Main() {
       }
       $slides[i].classList.add("active");
     }
-
     console.log(i);
+    handleClickOption(i);
   };
   return (
     <div>
