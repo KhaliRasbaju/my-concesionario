@@ -29,6 +29,7 @@ body {
   overflow-x: hidden;
 }
 
+
 img {
   width: 100%;
   height: auto;
@@ -480,4 +481,36 @@ img {
   justify-content: center;
   margin-top: 1rem;
 }
+
+.social-media i {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-media i:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .footer ul {
+    flex-direction: column;
+  }
+
+  .footer li {
+    margin: 0.5rem 0;
+  }
+
+  .social-media {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .social-media a {
+    width: 50%;
+  }
+}
+
 }

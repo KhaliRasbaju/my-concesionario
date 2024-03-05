@@ -363,7 +363,7 @@ export function Main() {
           </form>
         </div>
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
