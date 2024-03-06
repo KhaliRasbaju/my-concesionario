@@ -90,6 +90,7 @@ export function Main() {
         </article>
       </section>
       <section id="MODELOS" className="section">
+        <h2>Modelos</h2>
         <div className="container-modelos container-flex">
           <div className="options flex-item">
             <div
@@ -349,20 +350,23 @@ export function Main() {
         <h2>Contacto</h2>
         <div className="form-container">
           <form className="form">
-            <div>
+            <div className="form-item">
               <label>Nombre Completo</label>
               <input type="text" placeholder="Nombre Completo" />
             </div>
-            <div>
+            <div className="form-item">
               <label>Correo Electrónico</label>
               <input type="text" placeholder="Correo Electrónico" />
             </div>
-            <textarea
-              name="comentarios"
-              cols="30"
-              rows="10"
-              placeholder="Deja un Comentario"
-            ></textarea>
+            <div className="form-item form-textarea">
+              <label>Comentarios</label>
+              <textarea
+                name="comentarios"
+                cols="30"
+                rows="10"
+                placeholder="Deja un Comentario"
+              ></textarea>
+            </div>
             <input type="submit" />
           </form>
         </div>
