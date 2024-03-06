@@ -1,7 +1,6 @@
 //Importa Los archivos, librerias y  componentes requeridos
 import React, { useState } from "react";
 import Card from "./Cards";
-import Footer from "./Footer";
 import video from "../assets/imagenes/Video.mp4";
 import imgchevrolet from "../assets/imagenes/chevrolet.png";
 import imgferrari from "../assets/imagenes/ferrari.png";
@@ -84,6 +83,7 @@ export function Main() {
   //estructura del inicio
   return (
     <div>
+      {/* Sesion de inicio */}
       <section id="INICIO">
         <article className="container-inicio">
           <div className="contenido">
@@ -95,6 +95,7 @@ export function Main() {
           </video>
         </article>
       </section>
+      {/* Sesion de modelos aca ira el carrusel con su respectiva informacion */}
       <section id="MODELOS" className="section">
         <h2>Modelos</h2>
         <div className="container-modelos container-flex">
@@ -296,6 +297,7 @@ export function Main() {
           </div>
         </div>
       </section>
+      {/* Sesion de noticias con un grid se llama al componente card */}
       <section id="NOTICIAS" className="section">
         <h2>Noticias</h2>
         <div className="cards-container">
@@ -352,6 +354,7 @@ export function Main() {
           />
         </div>
       </section>
+      {/* Sesion de contacto donde ira el formulario */}
       <section id="CONTACTO" className="section">
         <h2>Contacto</h2>
         <div className="form-container">
@@ -377,7 +380,6 @@ export function Main() {
           </form>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
