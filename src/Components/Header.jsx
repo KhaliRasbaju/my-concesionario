@@ -39,7 +39,7 @@ export const Header = () => {
     console.log(event.target);
   };
   return (
-    <header className="header" data-dark>
+    <header className="header">
       <div className="container">
         <h2>
           CAR <span>HUB</span>
