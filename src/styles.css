@@ -3,6 +3,9 @@
 @import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
 @import "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url("");
 
 :root {
@@ -42,10 +45,6 @@ img {
   width: 100%;
   z-index: 10;
   background-color: var(--main-color);
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
 }
 
 .header > .container {
@@ -57,6 +56,10 @@ img {
 .header h2 {
   font-family: "";
   color: var(--first-color);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header span {
@@ -88,6 +91,10 @@ img {
   pointer-events: none;
   align-items: center;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .isVisibility {
@@ -126,17 +133,22 @@ img {
 .contenido {
   max-width: 600px;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .contenido h1 {
   position: absolute;
   font-size: 30px;
-  font-weight: 100;
   color: #e4e4e5;
   z-index: 1;
   margin: 0;
   left: 60px;
   top: 300px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .contenido h2 {
@@ -184,6 +196,9 @@ img {
 }
 .car-description h2 {
   text-align: center;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .car-description p {
@@ -192,6 +207,9 @@ img {
   font-weight: bold;
   text-align: justify;
   width: inherit;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .logo {
@@ -265,6 +283,10 @@ img {
   margin-top: 10rem;
   width: 100vw;
   min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 .bordes {
   margin: 0rem auto;
@@ -360,6 +382,10 @@ img {
   text-align: center;
   flex-direction: column;
   align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .footer h2 {
