@@ -2,13 +2,13 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css";
 @import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
 @import "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+@import url("");
 
 :root {
   --main-color: #e4e4e5;
   --white-color: #fff;
   --first-color: #000;
   --second-color: #ff8400;
-  --header-height: 4rem;
 }
 
 html {
@@ -42,7 +42,6 @@ img {
   height: auto;
   width: 100%;
   z-index: 10;
-  /* height: var(--header-height); */
   background-color: var(--main-color);
 }
 
@@ -53,6 +52,7 @@ img {
 }
 
 .header h2 {
+  font-family: "";
   color: var(--first-color);
 }
 
@@ -106,7 +106,7 @@ img {
   background-color: #979797;
 }
 
-.search-container {
+.dark-theme-btn {
   background: #b5b5b5;
   padding: 5px;
   border-radius: 50px;
@@ -115,25 +115,8 @@ img {
   right: 4.5rem;
 }
 
-.search-container input {
-  background: none;
-  border: none;
-  transition: 0.4s;
-  width: 0;
-  flex: 1 0; /* El input ocupa todo el espacio disponible */
-}
-
-.search-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #e4e4e5;
-  color: rgb(0, 0, 0);
-  border: solid #e4e4e5;
-}
-
-.search-container:hover input {
-  width: 240px;
+.dark-theme-btn:hover {
+  transform: scale(1.3);
   color: white;
 }
 
@@ -202,7 +185,7 @@ img {
 
 .car-description p {
   padding: 2rem;
-  color: #000;
+  color: var(--first-color);
   font-weight: bold;
   text-align: justify;
   width: inherit;
@@ -251,7 +234,7 @@ img {
 }
 
 .card-item {
-  border: 0.2rem solid #000000;
+  border: 0.2rem solid var(--first-color) 000;
   margin-bottom: 2rem;
   border-radius: 2%;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.75);
@@ -369,7 +352,7 @@ img {
   padding: 2rem;
   margin-bottom: 5rem;
   padding: 1rem;
-  color: #000;
+  color: var(--first-color);
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -377,8 +360,13 @@ img {
 }
 
 .footer h2 {
+  color: var(--first-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.footer span {
+  color: var(--second-color);
 }
 
 .footer p {
@@ -405,14 +393,18 @@ img {
 }
 
 .footer a {
-  color: #000;
+  color: var(--first-color);
   text-decoration: none;
 }
 
 .footer a:hover {
   text-decoration: underline;
 }
-
+.footer svg {
+  fill: var(--second-color);
+  width: 5rem;
+  height: 6rem;
+}
 .social-media {
   display: flex;
   position: relative;
@@ -422,9 +414,9 @@ img {
   width: 200px;
 }
 .social-item {
-  border: thin solid #000;
+  border: thin solid var(--first-color);
   padding: 0.5rem;
-  background-color: #000;
+  background-color: var(--first-color);
 }
 .social-media svg {
   width: 2rem;
@@ -433,6 +425,47 @@ img {
 }
 .social-media svg:hover {
   opacity: 0.5;
+}
+
+.classDark {
+  background-color: #202124;
+  color: white;
+}
+.classDark .header {
+  background-color: #454545;
+}
+
+.classDark h2,
+.classDark p,
+.classDark {
+  color: white;
+}
+.classDark .contenido h2 {
+  color: var(--second-color);
+}
+.classDark .menu {
+  background-color: #454545;
+}
+.classDark .menu a {
+  background-color: #454545;
+  color: var(--white-color);
+}
+.classDark .card-item {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(255, 255, 255, 0.75);
+}
+.classDark .menu a:hover {
+  background-color: #454545;
+  color: var(--second-color);
+}
+.classDark .footer {
+  background-color: var(--first-color);
+}
+
+.classDark .footer a {
+  color: var(--white-color);
+}
+.classDark .options {
+  background-color: #202124;
 }
 
 @media screen and (min-width: 48em) {
@@ -481,7 +514,7 @@ img {
     padding: 2rem;
     font-size: 1.5rem;
     border-radius: 10%;
-    border: thin solid #000;
+    border: thin solid var(--first-color);
     grid-column: span 2;
   }
 }
@@ -504,6 +537,7 @@ img {
     flex-direction: row;
     margin: 0;
     width: auto;
+    transition: transform 1s ease-in-out;
     pointer-events: auto;
   }
   .menu a:last-child {
@@ -512,37 +546,15 @@ img {
   }
   .menu a:hover {
     background-color: var(--main-color);
-    border-bottom: thin solid #000;
+    transform: scale(1.2);
   }
-  .search-container {
+  .dark-theme-btn {
     background: #b5b5b5;
     padding: 5px;
     position: static;
     border-radius: 50px;
     display: flex; /* Agregamos flexbox */
     margin-left: 35px;
-  }
-
-  .search-container input {
-    background: none;
-    border: none;
-    transition: 0.4s;
-    width: 0;
-    flex: 10; /* El input ocupa todo el espacio disponible */
-  }
-
-  .search-button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #e4e4e5;
-    color: rgb(0, 0, 0);
-    border: solid #e4e4e5;
-  }
-
-  .search-container:hover input {
-    width: 240px;
-    color: white;
   }
 
   .contenido h1 {

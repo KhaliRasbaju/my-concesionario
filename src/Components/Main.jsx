@@ -193,7 +193,7 @@ export function Main() {
             </div>
           </div>
           <div className="container-car flex-item flex-grow">
-            <div className="car-info ">
+            <div className="car-info">
               <div
                 className={`car-description ${
                   activeOption === 0 ? "" : "none"
