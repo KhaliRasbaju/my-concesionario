@@ -1,12 +1,13 @@
+//Importa Iconos de una Libreria
+
 import {
   faFacebookF,
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import icono from "../logo.svg";
 export default function Footer() {
-  const dataDark = "data-dark";
+  //Retorna la estructura del footer
   return (
     <div>
       <div>
@@ -19,7 +20,7 @@ export default function Footer() {
           </svg>
         </a>
       </div>
-      <footer className="footer" data-dark={dataDark}>
+      <footer className="footer">
         <h2>
           Car<span>Hub</span>
         </h2>

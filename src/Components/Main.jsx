@@ -1,3 +1,4 @@
+//Importa Los archivos, librerias y  componentes requeridos
 import React, { useState } from "react";
 import Card from "./Cards";
 import Footer from "./Footer";
@@ -20,7 +21,9 @@ import imgAudi from "../assets/CardsImagenes/audi A6 e-tron.jpg";
 import imgCadillac from "../assets/CardsImagenes/Cadillac.jpg";
 
 export function Main() {
+  // constante del documento
   const d = document;
+  //Define Los estilos para el carrusel
   const myStyle1 = {
     "--optionBackground": `url(${img5})`,
   };
@@ -36,7 +39,7 @@ export function Main() {
   const myStyle6 = {
     "--optionBackground": `url(${img6})`,
   };
-
+  //funcion la cual cambia el carrusel
   const handleClickCarOption = (event) => {
     // Elimina la clase activa de todos los elementos
     d.querySelectorAll(".option").forEach((elemento) => {
@@ -45,11 +48,12 @@ export function Main() {
     // Agrega la clase activa solo al elemento que se hizo clic
     event.target.classList.add("active");
   };
+  //Estado para manejar la informacion del Carrusel
   const [activeOption, setActiveOption] = useState(0);
   const handleClickOption = (index) => {
     setActiveOption(index);
   };
-
+  //Funcion Carrusel la cual nos ayuda en un movil o tablet
   const Carrousel = (event) => {
     const $nextBtn = d.querySelector(".slider-btn .next"),
       $prevBtn = d.querySelector(".slider-btn .prev"),
@@ -76,6 +80,8 @@ export function Main() {
     }
     setActiveOption(i);
   };
+
+  //estructura del inicio
   return (
     <div>
       <section id="INICIO">
