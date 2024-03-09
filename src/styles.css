@@ -8,7 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url("");
 
 /* Estilo determinados que se llaman */
 
@@ -280,15 +279,18 @@ img {
   /* display: inline-block; */
 }
 
-.section > h2 {
-  text-align: center;
-  padding-top: 8rem;
-}
-
 .card-item a {
   color: blue;
   text-decoration: none;
   padding: 2rem;
+}
+
+#MODELOS {
+  background-image: url("./assets/imagenes/bugatti-chiron-super-sport.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
 }
 /* Estilos para las sesiones */
 .section {
@@ -300,8 +302,9 @@ img {
   font-weight: 300;
   font-style: normal;
 }
-.bordes {
-  margin: 0rem auto;
+.section > h2 {
+  text-align: center;
+  padding-top: 8rem;
 }
 
 /* Estilos para el formulario */
@@ -509,7 +512,7 @@ img {
   color: var(--white-color);
 }
 .classDark .options {
-  background-color: #202124;
+  background: transparent;
 }
 
 /* Estilos para width de 48em */

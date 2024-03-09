@@ -186,15 +186,15 @@ export function Main() {
               </div>
             </div>
             <div
-              class="slider-btn"
+              className="slider-btn"
               onClick={(event) => {
                 Carrousel(event);
               }}
             >
-              <a class="prev" href="#">
+              <a className="prev" href="#">
                 &laquo;
               </a>
-              <a class="next" href="#">
+              <a className="next" href="#">
                 &raquo;
               </a>
             </div>

@@ -81,7 +81,7 @@ export const Header = () => {
             <a href="#CONTACTO">CONTACTO</a>
           </nav>
           {/* Boton del modo oscuro */}
-          <button class="dark-theme-btn" onClick={ModeDark}>
+          <button className="dark-theme-btn" onClick={ModeDark}>
             🌑
           </button>
         </div>
