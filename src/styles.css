@@ -1,3 +1,5 @@
+/* Importacion de estilos o fuentes */
+
 @import "https://kit.fontawesome.com/5358770994.js";
 @import "https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css";
 @import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
@@ -8,17 +10,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("");
 
+/* Estilo determinados que se llaman */
+
 :root {
   --main-color: #e4e4e5;
   --white-color: #fff;
   --first-color: #000;
   --second-color: #ff8400;
 }
+/* Reseteo de html */
 
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* Estilo de resteo en los tres estados */
 
 *,
 *::before,
@@ -26,15 +33,20 @@ html {
   box-sizing: inherit;
 }
 
+/* Estilos del body */
+
 body {
   margin: 0;
   overflow-x: hidden;
 }
 
+/* Estilo de las imagenes que tendran un responsive adecuado */
 img {
   width: 100%;
   height: auto;
 }
+
+/* Estlos de la clase Header */
 
 .header {
   position: fixed;
@@ -65,13 +77,19 @@ img {
 .header span {
   color: var(--second-color);
 }
+
+/* Estilos para ocultar una etiqueta */
 .none {
   display: none;
 }
 
+/* Estilos para mostrar una etiqueta */
+
 .block {
   display: block;
 }
+
+/* Estilos del menu despleglable */
 
 .menu-btn {
   position: fixed;
@@ -115,7 +133,7 @@ img {
   color: var(--second-color);
   background-color: #979797;
 }
-
+/* Estilo del boton de modo oscuro */
 .dark-theme-btn {
   background: #b5b5b5;
   padding: 5px;
@@ -130,6 +148,7 @@ img {
   color: white;
 }
 
+/* Estilo del contenido */
 .contenido {
   max-width: 600px;
   min-height: 100vh;
@@ -166,6 +185,7 @@ img {
   color: var(--second-color);
 }
 
+/* Estilos del contenedor de carro donde va el carrrusel y la informarcion de cada carro */
 .container-car {
   position: relative;
   margin: auto;
@@ -174,13 +194,17 @@ img {
   min-width: 200px;
   min-height: 400px;
 }
+
 .container-car img {
   top: 5rem;
   left: 2rem;
 }
+/* Estilo del container que le asigna margenes a los lados */
 .container-modelos {
   margin: 0 4rem;
 }
+
+/* Estilos para la descripcion del carro */
 .car-description {
   text-align: center;
   position: absolute;
@@ -216,19 +240,8 @@ img {
   width: 20rem;
   height: 15rem;
 }
-.contenido p {
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  color: rgb(183, 183, 183);
-  text-decoration: none;
-  margin: 30px 15px 30px 0;
-  z-index: 1;
-}
+
+/* Container Inicio */
 .container-inicio {
   position: relative;
   width: 100%; /* Ancho deseado del video */
@@ -246,9 +259,8 @@ img {
   height: 100%;
   object-fit: cover; /* Cubrir el contenedor manteniendo la relación de aspecto */
 }
-#NOTICIAS h2 {
-  text-align: center;
-}
+
+/* Estilos para las card en la sesion de noticias */
 
 .cards-container {
   margin: 2rem;
@@ -278,7 +290,7 @@ img {
   text-decoration: none;
   padding: 2rem;
 }
-
+/* Estilos para las sesiones */
 .section {
   margin-top: 10rem;
   width: 100vw;
@@ -292,11 +304,7 @@ img {
   margin: 0rem auto;
 }
 
-#MODELOS > .container {
-  width: 100%;
-  height: 100vh;
-}
-
+/* Estilos para el formulario */
 .form {
   margin: 2rem;
   background-color: #cccccc6e;
@@ -340,6 +348,8 @@ img {
   color: #666;
 }
 
+/* Animacion para el icono de whatsapp */
+
 @keyframes whatsapp {
   0% {
     transform: scale(1.1);
@@ -353,6 +363,8 @@ img {
     transform: scale(1);
   }
 }
+
+/* Estilos para el icono de whatsapp */
 .whatsapp-ico {
   fill: white;
   width: 50px;
@@ -371,6 +383,8 @@ img {
 .whatsapp-ico:hover {
   box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
 }
+
+/* Estilos para el Footer */
 
 .footer {
   background-color: #bebebe;
@@ -451,6 +465,7 @@ img {
   opacity: 0.5;
 }
 
+/* Estilos para el modo oscuro */
 .classDark {
   background-color: #202124;
   color: white;
@@ -497,21 +512,29 @@ img {
   background-color: #202124;
 }
 
+/* Estilos para width de 48em */
+
 @media screen and (min-width: 48em) {
+  /* Estilo para un contenedor flex */
   .container-flex {
     display: flex;
     flex-direction: row;
-  }
-  .car-description {
-    margin-top: -4rem;
-    margin-left: 2rem;
   }
   .flex-item {
     margin-top: 2rem;
     align-items: center;
     flex-basis: 50%;
   }
-
+  /* Estilo para cambiar la margenes a la descripcion del carro */
+  .car-description {
+    margin-top: -4rem;
+    margin-left: 2rem;
+  }
+  .container-car img {
+    top: 5rem;
+    left: 2rem;
+  }
+  /* Estlos para las cards container tipo Grid */
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -520,10 +543,7 @@ img {
     align-items: start;
     margin: 4rem;
   }
-  .container-car img {
-    top: 5rem;
-    left: 2rem;
-  }
+  /* Estilos para el formulario  */
   .form {
     margin: 3rem auto;
     height: 500px;
@@ -547,15 +567,20 @@ img {
     grid-column: span 2;
   }
 }
+
+/* Estilos para una width de 64em */
 @media screen and (min-width: 64em) {
+  /* Estilos del header para posicion sticky */
   .header {
     position: sticky;
     top: 0;
     left: 0;
   }
+  /* Estilo para cambiar el flex-grow del h2 */
   .container > h2 {
     flex-grow: 2;
   }
+  /* Estilos del menu */
   .menu-btn {
     display: none;
   }
@@ -577,6 +602,8 @@ img {
     background-color: var(--main-color);
     transform: scale(1.2);
   }
+
+  /* Estilos para el boton de modo oscuro */
   .dark-theme-btn {
     background: #b5b5b5;
     padding: 5px;
@@ -585,7 +612,7 @@ img {
     display: flex; /* Agregamos flexbox */
     margin-left: 35px;
   }
-
+  /* Estilos para cambiar el tamaño de fuente */
   .contenido h1 {
     font-size: 40px;
   }
@@ -593,21 +620,24 @@ img {
   .contenido h2 {
     font-size: 30px;
   }
-
+  /* Estilo para las cards-container tipo grid */
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  /* Estilo para las imagenes que esten dentro del container-car */
   .container-car img {
     top: 4rem;
     left: 8rem;
   }
+  /* Estilo para el icono de whatsapp */
   .whatsapp-ico {
     left: inherit;
     top: inherit;
     bottom: 3rem;
     right: 2rem;
   }
+
+  /* Estilo para el footer */
   .footer {
     margin: 0;
   }

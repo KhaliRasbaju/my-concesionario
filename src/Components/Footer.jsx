@@ -10,6 +10,7 @@ export default function Footer() {
   //Retorna la estructura del footer
   return (
     <div>
+      {/* Icono de Whatsapp este no quitarlo Gracias */}
       <div>
         <a href="https://wa.me/573188723997" target="_blank">
           <svg viewBox="0 0 32 32" class="whatsapp-ico">
@@ -20,6 +21,7 @@ export default function Footer() {
           </svg>
         </a>
       </div>
+      {/* Footer de la pagina */}
       <footer className="footer">
         <h2>
           Car<span>Hub</span>
