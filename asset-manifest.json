@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/my-concesionario/static/css/main.fb501bc8.css",
+    "main.js": "/my-concesionario/static/js/main.2e951d10.js",
+    "static/js/453.5c0408bc.chunk.js": "/my-concesionario/static/js/453.5c0408bc.chunk.js",
+    "static/media/Video.mp4": "/my-concesionario/static/media/Video.ebf0d3e5d9d7b7ee3111.mp4",
+    "static/media/chevrolet.png": "/my-concesionario/static/media/chevrolet.216796adf8f4ca789a05.png",
+    "static/media/ferrari.png": "/my-concesionario/static/media/ferrari.9beb3a12f455f51522e5.png",
+    "static/media/lamborghini.png": "/my-concesionario/static/media/lamborghini.10774b2b0164438ed6dc.png",
+    "static/media/image6.jpg": "/my-concesionario/static/media/image6.b8f3bb421cdad4872ad5.jpg",
+    "static/media/Ford-GT.jpg": "/my-concesionario/static/media/Ford-GT.f00aab062f01eb333203.jpg",
+    "static/media/image1.webp": "/my-concesionario/static/media/image1.447ba5a4f1acec6b7882.webp",
+    "static/media/porsche.png": "/my-concesionario/static/media/porsche.a296a5b9c07ca031bd0a.png",
+    "static/media/image5.webp": "/my-concesionario/static/media/image5.5f669f5478e0dec83a5e.webp",
+    "static/media/image4.jpg": "/my-concesionario/static/media/image4.7cb53e92b942160404e8.jpg",
+    "static/media/image2.jpg": "/my-concesionario/static/media/image2.d857ea537afa74b95bf9.jpg",
+    "static/media/bmw m5.jpg": "/my-concesionario/static/media/bmw m5.ce03635f4aa9f28a30ee.jpg",
+    "static/media/nissan-z-nismo.jpg": "/my-concesionario/static/media/nissan-z-nismo.44ecf796ccf682d0588a.jpg",
+    "static/media/Cadillac.jpg": "/my-concesionario/static/media/Cadillac.35b0083f1951af9934cd.jpg",
+    "static/media/mercedes-benz-clase-e-2024.jpg": "/my-concesionario/static/media/mercedes-benz-clase-e-2024.15ff3e2e99d0495fbf69.jpg",
+    "static/media/audi A6 e-tron.jpg": "/my-concesionario/static/media/audi A6 e-tron.c20b433a4957f8961dcc.jpg",
+    "static/media/tesla.png": "/my-concesionario/static/media/tesla.d3e24a7ac7bcd42f934e.png",
+    "static/media/logo.svg": "/my-concesionario/static/media/logo.9c1cf21c62d84393d4cc13ffaf5ba729.svg",
+    "index.html": "/my-concesionario/index.html",
+    "main.fb501bc8.css.map": "/my-concesionario/static/css/main.fb501bc8.css.map",
+    "main.2e951d10.js.map": "/my-concesionario/static/js/main.2e951d10.js.map",
+    "453.5c0408bc.chunk.js.map": "/my-concesionario/static/js/453.5c0408bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb501bc8.css",
+    "static/js/main.2e951d10.js"
+  ]
+}
