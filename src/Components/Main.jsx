@@ -206,7 +206,7 @@ export function Main() {
                 }`}
               >
                 <h2>Porsche</h2>
-                <img src={pngporshe} alt="Porshe Logo" className="logo" />
+                <img src={pngporshe} alt="Porshe Logo" />
                 <p>
                   Los atletas lo saben: el máximo rendimiento requiere algo más
                   que condiciones perfectas y suerte. El factor decisivo es la
@@ -224,7 +224,7 @@ export function Main() {
                 }`}
               >
                 <h2>Tesla</h2>
-                <img src={pngtesla} alt="Tesla Logo" className="logo" />
+                <img src={pngtesla} alt="Tesla Logo" />
                 <p>
                   Experimenta la vanguardia de la ingeniería eléctrica con el
                   Tesla Roadster 2020. Este automóvil redefine la velocidad y la
@@ -241,7 +241,7 @@ export function Main() {
                 }`}
               >
                 <h2>Ferrari</h2>
-                <img src={imgferrari} alt="Ferrari Logo" className="logo" />
+                <img src={imgferrari} alt="Ferrari Logo" />
                 <p>
                   La excelencia italiana cobra vida en el Ferrari LaFerrari. Con
                   un motor V12 y un sistema híbrido, este superdeportivo encarna
@@ -259,7 +259,7 @@ export function Main() {
                 }`}
               >
                 <h2>Lamborghini</h2>
-                <img src={pnglamborghini} alt="Logo Porshe" className="logo" />
+                <img src={pnglamborghini} alt="Logo Porshe" />
                 <p>
                   Domina la carretera con el Lamborghini Huracan Tecnica. Este
                   superdeportivo combina potencia brutal con un manejo ágil para
@@ -277,7 +277,7 @@ export function Main() {
                 }`}
               >
                 <h2>Chevrolet</h2>
-                <img src={imgchevrolet} alt="Chevrolet Logo" className="logo" />
+                <img src={imgchevrolet} alt="Chevrolet Logo" />
                 <p>
                   Siente la potencia americana con el Chevrolet Camaro ZL1. Este
                   muscle car icónico combina un diseño agresivo con un
