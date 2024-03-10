@@ -370,7 +370,7 @@ img {
   box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
 }
 
-.footer {
+footer {
   background-color: #bebebe;
   padding: 2rem;
   margin-bottom: 5rem;
@@ -378,11 +378,12 @@ img {
   color: var(--first-color);
   display: flex;
   text-align: center;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: baseline;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  justify-content: space-between;
 }
 
 .footer h2 {
@@ -396,27 +397,30 @@ img {
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
-.footer ul {
+.enlaces,.final{
+  flex-grow: 1; /* Hacer que estas secciones crezcan para ocupar el espacio restante */
+}
+.enlaces ul,.final ul {
   display: flex;
+  flex-direction: column;
   list-style: none;
   font-size: 1.01rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  justify-content: space-evenly;
   font-weight: bold;
-  margin: 0;
+  margin: 30px;
   padding: 0;
 }
 
-.footer li {
-  margin: 0 1rem;
+.enlaces li,.final li {
+  display: flex;
+  margin: 7px;
+  margin-bottom: 0.5rm;
+  text-align: center;
 }
 
 .footer a {
   color: var(--first-color);
   text-decoration: none;
+  display: block;
 }
 
 .footer a:hover {
@@ -436,13 +440,13 @@ img {
   width: 200px;
 }
 .social-item {
-  border: thin solid var(--first-color);
+  border: #bebebe;
   padding: 0.5rem;
-  background-color: var(--first-color);
+  background-color: #bebebe;
 }
 .social-media svg {
   width: 2rem;
-  color: var(--white-color);
+  color: var(--first-color);
   height: 2rem;
 }
 .social-media svg:hover {
