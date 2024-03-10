@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-concesionario/static/css/main.85db9264.css",
-    "main.js": "/my-concesionario/static/js/main.3d9934ad.js",
+    "main.css": "/my-concesionario/static/css/main.e70f0aaa.css",
+    "main.js": "/my-concesionario/static/js/main.48da277f.js",
     "static/js/453.5c0408bc.chunk.js": "/my-concesionario/static/js/453.5c0408bc.chunk.js",
     "static/media/Video.mp4": "/my-concesionario/static/media/Video.ebf0d3e5d9d7b7ee3111.mp4",
     "static/media/chevrolet.png": "/my-concesionario/static/media/chevrolet.216796adf8f4ca789a05.png",
@@ -23,12 +23,12 @@
     "static/media/logo.svg": "/my-concesionario/static/media/logo.9c1cf21c62d84393d4cc13ffaf5ba729.svg",
     "static/media/cocesionario.jpg": "/my-concesionario/static/media/cocesionario.19e466a6a5ce8e2dd73e.jpg",
     "index.html": "/my-concesionario/index.html",
-    "main.85db9264.css.map": "/my-concesionario/static/css/main.85db9264.css.map",
-    "main.3d9934ad.js.map": "/my-concesionario/static/js/main.3d9934ad.js.map",
+    "main.e70f0aaa.css.map": "/my-concesionario/static/css/main.e70f0aaa.css.map",
+    "main.48da277f.js.map": "/my-concesionario/static/js/main.48da277f.js.map",
     "453.5c0408bc.chunk.js.map": "/my-concesionario/static/js/453.5c0408bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85db9264.css",
-    "static/js/main.3d9934ad.js"
+    "static/css/main.e70f0aaa.css",
+    "static/js/main.48da277f.js"
   ]
 }
