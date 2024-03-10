@@ -39,43 +39,45 @@ export const Header = () => {
     console.log(event.target);
   };
   return (
-    <header className="header">
-      <div className="container">
-        <h2>
-          CAR <span>HUB</span>
-        </h2>
-        <button
-          className={`hamburger hamburger--vortex menu-btn  ${
-            isActive ? "is-active" : ""
-          }`}
-          type="button"
-          onClick={(e) => {
-            menuBtn();
-            menuVisibility();
-          }}
-        >
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>
-        <nav
-          className={`menu ${isVisibility ? "isVisibility" : ""}`}
-          onClick={(e) => {
-            menuBtn();
-            menuVisibility();
-          }}
-          data-dark
-        >
-          <a href="#INICIO">INICIO</a>
-          <a href="#MODELOS">MODELOS</a>
-          <a href="#NOTICIAS">NOTICIAS</a>
-          <a href="#CONTACTO">CONTACTO</a>
-        </nav>
-        <button class="dark-theme-btn" onClick={ModeDark}>
-          🌑
-        </button>
-      </div>
-    </header>
+    <div>
+      <header className="header">
+        <div className="container">
+          <h2>
+            CAR <span>HUB</span>
+          </h2>
+          <button
+            className={`hamburger hamburger--vortex menu-btn  ${
+              isActive ? "is-active" : ""
+            }`}
+            type="button"
+            onClick={(e) => {
+              menuBtn();
+              menuVisibility();
+            }}
+          >
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
+          <nav
+            className={`menu ${isVisibility ? "isVisibility" : ""}`}
+            onClick={(e) => {
+              menuBtn();
+              menuVisibility();
+            }}
+            data-dark
+          >
+            <a href="#INICIO">INICIO</a>
+            <a href="#MODELOS">MODELOS</a>
+            <a href="#NOTICIAS">NOTICIAS</a>
+            <a href="#CONTACTO">CONTACTO</a>
+          </nav>
+          <button class="dark-theme-btn" onClick={ModeDark}>
+            🌑
+          </button>
+        </div>
+      </header>
+    </div>
   );
 };
 

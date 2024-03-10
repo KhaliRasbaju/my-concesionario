@@ -90,7 +90,7 @@ export function Main() {
             <h1>UNA MARAVILLA DE LA INGENIERÍA</h1>
             <h2>ÚNETE AHORA !</h2>
           </div>
-          <video className="video" width="600" height="auto" autoPlay loop>
+          <video className="video" autoPlay loop>
             <source src={video} />
           </video>
         </article>
@@ -215,10 +215,7 @@ export function Main() {
                   a sí mismo. Y aprender el máximo de cada error. Porque el
                   mayor desafío es permanecer imbatible. Solo con este enfoque,
                   Porsche es capaz de seguir ampliando los límites de lo
-                  factible. Para un aumento adicional del rendimiento en el
-                  circuito, gracias a un agarre radical y la amplia construcción
-                  ligera. Experimente el nuevo 911 GT3 RS en su máximo
-                  rendimiento.
+                  factible.
                 </p>
               </div>
               <div

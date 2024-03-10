@@ -18,6 +18,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 *,
@@ -27,6 +28,7 @@ html {
 }
 
 body {
+  padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
@@ -38,8 +40,8 @@ img {
 
 .header {
   position: fixed;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   padding: 1rem;
   width: 100%;
   height: auto;
@@ -167,16 +169,12 @@ img {
 }
 
 .container-car {
+  top: -4rem;
   position: relative;
   margin: auto;
-
   max-width: 800px;
   min-width: 200px;
   min-height: 400px;
-}
-.container-car img {
-  top: 5rem;
-  left: 2rem;
 }
 .container-modelos {
   margin: 0 4rem;
@@ -191,8 +189,10 @@ img {
 .car-description img {
   position: absolute;
   opacity: 0.15;
-  top: 4rem;
-  left: 6rem;
+  width: 250px;
+  height: auto;
+  top: 12rem;
+  left: -1rem;
 }
 .car-description h2 {
   text-align: center;
@@ -202,11 +202,9 @@ img {
 }
 
 .car-description p {
-  padding: 2rem;
   color: var(--first-color);
   font-weight: bold;
   text-align: justify;
-  width: inherit;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -268,33 +266,36 @@ img {
   /* display: inline-block; */
 }
 
-.section > h2 {
-  text-align: center;
-  padding-top: 8rem;
-}
-
 .card-item a {
   color: blue;
   text-decoration: none;
   padding: 2rem;
 }
 
+#MODELOS {
+  background-image: url("./assets/imagenes/cocesionario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .section {
-  margin-top: 10rem;
-  width: 100vw;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
+
+.section > h2 {
+  text-align: center;
+  padding-top: 4rem;
+}
 .bordes {
   margin: 0rem auto;
-}
-
-#MODELOS > .container {
-  width: 100%;
-  height: 100vh;
 }
 
 .form {
@@ -494,7 +495,7 @@ img {
   color: var(--white-color);
 }
 .classDark .options {
-  background-color: #202124;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 48em) {

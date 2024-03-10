@@ -1,6 +1,6 @@
 .options {
   position: relative;
-  background-color: gray;
+  background-color: transparent;
   width: 100%;
   height: 300px;
   margin: 2rem auto;
@@ -15,6 +15,7 @@
   left: 0;
   background-image: var(--optionBackground);
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   visibility: hidden;
   opacity: 0;
@@ -208,7 +209,7 @@
     overflow: hidden;
     min-width: 600px;
     max-width: 853px;
-    background-color: #fff;
+    background-color: transparent;
     width: calc(100% - 100px);
     height: 400px;
   }
@@ -343,123 +344,5 @@
   body .options .option .label .info .sub {
     transition-delay: 0.1s;
     color: #ff8400;
-  }
-  .inicio {
-    position: relative;
-  }
-  #MODELOS > .cantainer {
-    margin: 35rem auto;
-  }
-  .options {
-    margin: auto;
-    margin-top: 50px;
-    left: 10px;
-  }
-
-  .options-container {
-    margin-bottom: 300px;
-  }
-
-  @media screen and (max-width: 767px) {
-    .footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      background-color: black;
-    }
-  
-    .footer h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-  
-    .footer p {
-      font-size: 0.8rem;
-      margin-bottom: 1rem;
-    }
-  
-    .footer ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .footer li {
-      margin: 0 0.5rem;
-    }
-  
-    .footer a {
-      color: var(--white-color);
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
-  
-    .social-media {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-  
-    .social-media i {
-      font-size: 1rem;
-      margin: 0 0.5rem;
-      color: white;
-      transition: color 0.3s ease;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .footer {
-      flex-direction: row;
-      background-color: #000000;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
-  
-    .footer h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-  
-    .footer p {
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-  
-    .footer ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      justify-content: flex-start;
-    }
-  
-    .footer li {
-      margin: 0 1rem;
-    }
-  
-    .footer a {
-      color: var(--white-color);
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-  
-    .social-media {
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 1rem;
-    }
-  
-    .social-media i {
-      font-size: 1.2rem;
-      margin: 0 0.5rem;
-      color: white;
-      transition: color 0.3s ease;
-    }
   }
 }
