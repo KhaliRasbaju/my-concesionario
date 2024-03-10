@@ -19,6 +19,7 @@ import imgMercedez from "../assets/CardsImagenes/mercedes-benz-clase-e-2024.jpg"
 import imgNissan from "../assets/CardsImagenes/nissan-z-nismo.jpg";
 import imgAudi from "../assets/CardsImagenes/audi A6 e-tron.jpg";
 import imgCadillac from "../assets/CardsImagenes/Cadillac.jpg";
+import imgFondo from "../assets/imagenes/cocesionario.jpg";
 
 export function Main() {
   // constante del documento
@@ -38,6 +39,9 @@ export function Main() {
   };
   const myStyle6 = {
     "--optionBackground": `url(${img6})`,
+  };
+  const myStyle7 = {
+    "--optionBackground": `url(${imgFondo})`,
   };
   //funcion la cual cambia el carrusel
   const handleClickCarOption = (event) => {
@@ -95,7 +99,7 @@ export function Main() {
           </video>
         </article>
       </section>
-      <section id="MODELOS" className="section">
+      <section id="MODELOS" className="section" style={myStyle7}>
         <h2>Modelos</h2>
         <div className="container-modelos container-flex">
           <div className="options flex-item">

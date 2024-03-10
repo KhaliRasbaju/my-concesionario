@@ -524,23 +524,19 @@ export default function Footer() {
                 />
               </g>
             </svg>
-                
           </div>
-          </section>
+        </section>
         <section className="informacion">
           <h2>Contacto</h2>
           <p>Direccion: Calle 9 No. 23-55.UDI</p>
-          <p>Telefonos: +57 3107765803 |
-            +57 3178882445 |
-            +57 3160508859 |
-          </p>
-          <p>Correos: jmacias7@udi.edu.co |
-            ksalamanca1@udi.edu.co |
+          <p>Telefonos: +57 3107765803 | +57 3178882445 | +57 3160508859 |</p>
+          <p>
+            Correos: jmacias7@udi.edu.co | ksalamanca1@udi.edu.co |
             svalencia2@udi.edu.co
           </p>
         </section>
         <section className="enlaces">
-          <h2>Enlaces</h2>
+          <h2>Sección</h2>
           <ul>
             <li>
               <a href="#INICIO">Inicio</a>
@@ -555,21 +551,21 @@ export default function Footer() {
               <a href="#CONTACTO">Contacto</a>
             </li>
           </ul>
-          </section>
-          <section className="final">
+        </section>
+        <section className="final">
           <h2>Legal</h2>
           <li>
-              <a href="#Terminos">Términos y condiciones</a>
+            <a href="#Terminos">Términos y condiciones</a>
           </li>
           <li>
-              <a href="#Politica">Política de Privacidad</a>
+            <a href="#Politica">Política de Privacidad</a>
           </li>
           <li>
-              <a href="#FAQ">FAQ</a>
+            <a href="#FAQ">FAQ</a>
           </li>
           <p>Copyright © 2024 CarHub.Todos los derechos reservados.</p>
-          </section>
-          
+        </section>
+
         <div className="social-media">
           <a
             className="social-item"

@@ -270,10 +270,15 @@ img {
 }
 
 #MODELOS {
-  background-image: url("./assets/imagenes/cocesionario.jpg");
+  background-image: var(--optionBackground);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+#MODELOS h2,
+#MODELOS p {
+  font-weight: bold;
+  color: var(--first-color);
 }
 
 .section {
@@ -370,50 +375,52 @@ img {
   box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
 }
 
-footer {
-  background-color: #bebebe;
-  padding: 2rem;
-  margin-bottom: 5rem;
-  padding: 1rem;
-  color: var(--first-color);
+.footer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bebebe;
+
+  margin-bottom: 6rem;
+  border: thin solid #000;
+}
+
+.footer .informacion {
+  margin: 2rem;
   text-align: center;
-  flex-direction: row;
-  align-items: baseline;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  justify-content: space-between;
 }
 
-.footer h2 {
-  color: var(--first-color);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.footer .icono svg {
+  width: 4rem;
+  height: 4rem;
 }
 
-.footer p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.principal,
+.enlaces,
+.final {
+  text-align: center;
 }
-.enlaces,.final{
-  flex-grow: 1; /* Hacer que estas secciones crezcan para ocupar el espacio restante */
-}
-.enlaces ul,.final ul {
+
+.enlaces ul,
+.final ul {
+  text-align: center;
   display: flex;
   flex-direction: column;
   list-style: none;
   font-size: 1.01rem;
-  font-weight: bold;
+
   margin: 30px;
   padding: 0;
 }
 
-.enlaces li,.final li {
+.enlaces li,
+.final li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 7px;
-  margin-bottom: 0.5rm;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -466,6 +473,12 @@ footer {
 .classDark {
   color: white;
 }
+
+.classDark #MODELOS h2,
+.classDark #MODELOS p {
+  color: var(--first-color);
+  font-weight: bold;
+}
 .classDark .contenido h2 {
   color: var(--second-color);
 }
@@ -495,6 +508,14 @@ footer {
 .classDark .footer a {
   color: var(--white-color);
 }
+.classDark .footer .social-item {
+  background-color: #000;
+}
+
+.classDark .footer .social-item svg {
+  color: var(--white-color);
+}
+
 .classDark .options {
   background-color: transparent;
 }
@@ -610,7 +631,9 @@ footer {
     bottom: 3rem;
     right: 2rem;
   }
+
   .footer {
+    flex-direction: row;
     margin: 0;
   }
 }
