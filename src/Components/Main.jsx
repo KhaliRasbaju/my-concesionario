@@ -1,7 +1,6 @@
 //Importa Los archivos, librerias y  componentes requeridos
 import React, { useState } from "react";
 import Card from "./Cards";
-import Footer from "./Footer";
 import video from "../assets/imagenes/Video.mp4";
 import imgchevrolet from "../assets/imagenes/chevrolet.png";
 import imgferrari from "../assets/imagenes/ferrari.png";
@@ -88,6 +87,7 @@ export function Main() {
   //estructura del inicio
   return (
     <div>
+      {/* Sección de Inicio */}
       <section id="INICIO">
         <article className="container-inicio">
           <div className="contenido">
@@ -99,9 +99,12 @@ export function Main() {
           </video>
         </article>
       </section>
+      {/* Sección de modelos con el carrusel y la info de cada vehículo */}
       <section id="MODELOS" className="section" style={myStyle7}>
         <h2>Modelos</h2>
+
         <div className="container-modelos container-flex">
+          {/* Carrusel */}
           <div className="options flex-item">
             <div
               className={`option active`}
@@ -202,6 +205,7 @@ export function Main() {
               </a>
             </div>
           </div>
+          {/* Informacion del vehículo */}
           <div className="container-car flex-item flex-grow">
             <div className="car-info">
               <div
@@ -297,6 +301,7 @@ export function Main() {
           </div>
         </div>
       </section>
+      {/* Sección de Noticias */}
       <section id="NOTICIAS" className="section">
         <h2>Noticias</h2>
         <div className="cards-container">
@@ -353,6 +358,7 @@ export function Main() {
           />
         </div>
       </section>
+      {/* Sección Contacto */}
       <section id="CONTACTO" className="section">
         <h2>Contacto</h2>
         <div className="form-container">
@@ -378,8 +384,6 @@ export function Main() {
           </form>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
-// Siuu

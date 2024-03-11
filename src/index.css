@@ -1,3 +1,4 @@
+/* Estilos para el carrusel en su apartado de options */
 .options {
   position: relative;
   background-color: transparent;
@@ -21,10 +22,13 @@
   opacity: 0;
   transition: opacity 1s ease;
 }
+
+/* Estilo para ocultar l ainformacion en texto */
 .label {
   display: none;
 }
 
+/* Estilo para el boton */
 .slider-btn {
   position: absolute;
   width: 100%;
@@ -35,11 +39,6 @@
   font-weight: bold;
 }
 
-.option.active {
-  opacity: 1;
-  visibility: visible;
-  width: 100%;
-}
 .slider-btn a {
   text-align: center;
   display: block;
@@ -53,9 +52,17 @@
   color: #fff;
   transition: all 0.3s ease;
 }
+/* Estilo para el option */
+.option.active {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
 .options a:hover {
   color: #4d4d4d;
 }
+
+/* Estilo para el carrusel con un width igual o mayor de 1024px */
 
 @media screen and (min-width: 1024px) {
   .slider-btn {

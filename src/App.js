@@ -1,14 +1,14 @@
-import logo from "./logo.svg";
 import "./styles.css";
-// import "./index.css";
 import { Header } from "./Components/Header";
 import { Main } from "./Components/Main";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div>
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 }

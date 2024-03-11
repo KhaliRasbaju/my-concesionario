@@ -12,6 +12,7 @@ export default function Footer() {
   return (
     <div>
       <div>
+        {/* Icono Whatsapp */}
         <a href="https://wa.me/573188723997" target="_blank">
           <svg viewBox="0 0 32 32" class="whatsapp-ico">
             <path
@@ -21,7 +22,9 @@ export default function Footer() {
           </svg>
         </a>
       </div>
+      {/* Sección del footer */}
       <footer className="footer">
+        {/* Sección del  principal*/}
         <section className="principal">
           <h2>
             Car<span>Hub</span>
@@ -526,6 +529,7 @@ export default function Footer() {
             </svg>
           </div>
         </section>
+        {/* Sección de informacion */}
         <section className="informacion">
           <h2>Contacto</h2>
           <p>Direccion: Calle 9 No. 23-55.UDI</p>
@@ -535,7 +539,7 @@ export default function Footer() {
             svalencia2@udi.edu.co
           </p>
         </section>
-
+        {/* Sección del final */}
         <section className="final">
           <h2>Legal</h2>
           <li>
