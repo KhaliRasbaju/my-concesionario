@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-concesionario/static/css/main.e0faaa4d.css",
+    "main.css": "/my-concesionario/static/css/main.81c1c79e.css",
     "main.js": "/my-concesionario/static/js/main.9a5c9568.js",
     "static/js/453.5c0408bc.chunk.js": "/my-concesionario/static/js/453.5c0408bc.chunk.js",
     "static/media/Video.mp4": "/my-concesionario/static/media/Video.ebf0d3e5d9d7b7ee3111.mp4",
@@ -22,12 +22,12 @@
     "static/media/tesla.png": "/my-concesionario/static/media/tesla.d3e24a7ac7bcd42f934e.png",
     "static/media/cocesionario.jpg": "/my-concesionario/static/media/cocesionario.19e466a6a5ce8e2dd73e.jpg",
     "index.html": "/my-concesionario/index.html",
-    "main.e0faaa4d.css.map": "/my-concesionario/static/css/main.e0faaa4d.css.map",
+    "main.81c1c79e.css.map": "/my-concesionario/static/css/main.81c1c79e.css.map",
     "main.9a5c9568.js.map": "/my-concesionario/static/js/main.9a5c9568.js.map",
     "453.5c0408bc.chunk.js.map": "/my-concesionario/static/js/453.5c0408bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0faaa4d.css",
+    "static/css/main.81c1c79e.css",
     "static/js/main.9a5c9568.js"
   ]
 }
